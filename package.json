@@ -1,0 +1,11 @@
+{
+  "name": "codebuild-demo",
+  "version": "1.0.0",
+  "description": "Sample app for the CodeBuild and CodePipeline labs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node --test",
+    "build": "node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});['app.js','package.json'].forEach(f=>fs.copyFileSync(f,'dist/'+f))\""
+  }
+}
