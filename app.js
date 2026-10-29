@@ -12,6 +12,6 @@ if (require.main === module) {
   const http = require('http');
   const port = process.env.PORT || 3000;
   http.createServer((req, res) => {
-    res.end(greet('CodeBuild'));
+    res.end(greet('CodeBuild test'));
   }).listen(port, () => console.log(`Listening on port ${port}`));
 }
